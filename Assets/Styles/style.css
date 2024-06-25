@@ -1,4 +1,41 @@
-@import url(header.css);
+@import 'header.css';
+@import 'footer.css';
+
+/* fontes links */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    /* fontes */
+    --primary-font: 'Roboto' sans-serif;
+    --secundary-font: 'Poppins' sans-serif;
+
+    --space: 40px;
+
+    /* cores */
+    --yellow-light: #FFBB00;
+    --yellow-dark: #E7A50C;
+    --yellow-burn: #A66F00;
+    --brown-light: #714A03;
+    --brown: #331F01;
+
+    /* cores claras */
+    --white: #ffffff;
+    --grey1: #F7F7F7;
+    --grey2: #E0E0E0;
+    --grey3: #C8C8C8;
+    --grey4: #AEAEAE;
+    --grey5: #949494;
+
+    /* cores escuras */
+    --black: #000000;
+    --grey6: #7D7D7D;
+    --grey7: #606060;
+    --grey8: #464646;
+    --grey9: #272727;
+    --grey10: #212121;
+    --grey11: #141414;
+}
 
 /* Reset CSS */
 
