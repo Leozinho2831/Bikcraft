@@ -37,6 +37,10 @@
     --grey11: #141414;
 }
 
+h1, h2, h3, h4, h5, h6, p, li, label, input{
+    font-family: var(--primary-font);
+}
+
 /* Reset CSS */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
