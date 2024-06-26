@@ -1,0 +1,24 @@
+.main__introduction{
+    background-color: var(--black);
+    padding: var(--space);
+}
+
+.main__introduction > div{
+    display: flex;
+    justify-content: center;
+}
+
+.introduction__text h1{
+    font-family: var(--secundary-font);
+    font-weight: 600;
+    font-size: 4rem;
+    color: var(--white);
+}
+
+.introduction__text h1 > span{
+    color: var(--yellow-light);
+}
+
+.introduction__text p{
+    color: var(--grey4);
+}
