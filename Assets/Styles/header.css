@@ -27,7 +27,7 @@
     font-size: 1.125rem;
 }
 
-.cabecalho__menu-mobile {
+.header__menu-mobile {
     width: 80px;
     height: 30%;
     display: none;
@@ -35,7 +35,7 @@
     flex-direction: column;
 }
 
-.cabecalho__menu-mobile div{
+.header__menu-mobile div{
     background-color: var(--white);
     width: 40px;
     height: 4px;
@@ -50,23 +50,27 @@
         margin-left: 2em;
     }
 
-    .cabecalho__menu-mobile {
+    .header__menu-mobile {
         display: flex;
     }
 
-    .cabecalho__menu-mobile.active #menu2 {
+    /* Fazendo o menu virar um x ao ser clicado */
+
+    .header__menu-mobile.active #menu2 {
         opacity: 0;
     }
 
-    .cabecalho__menu-mobile.active #menu1 {
+    .header__menu-mobile.active #menu1 {
         transform: translateY(12px) rotate(45deg);
         transition: 0.3s;
     }
 
-    .cabecalho__menu-mobile.active #menu3 {
+    .header__menu-mobile.active #menu3 {
         transform: translateY(-12px) rotate(-45deg);
         transition: 0.3s;
     }
+
+    /* Posicionando a lista */
 
     .header__list{
         position: fixed;

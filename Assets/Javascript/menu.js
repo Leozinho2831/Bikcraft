@@ -1,4 +1,6 @@
-const menu = document.querySelector(".cabecalho__menu-mobile");
+// Fazendo o menu receber a classe active ao ser clicado
+
+const menu = document.querySelector(".header__menu-mobile");
 const lista = document.querySelector(".header__list");
 
 menu.addEventListener("click", () => {
