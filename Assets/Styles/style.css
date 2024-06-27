@@ -10,8 +10,8 @@
 
 :root{
     /* fontes */
-    --primary-font: 'Roboto' sans-serif;
-    --secundary-font: 'Poppins' sans-serif;
+    --primary-font: 'Roboto', sans-serif;
+    --secundary-font: 'Poppins', sans-serif;
 
     --space: 40px;
 
