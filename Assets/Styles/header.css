@@ -56,31 +56,33 @@
 
     /* Fazendo o menu virar um x ao ser clicado */
 
-    .header__menu-mobile.active #menu2 {
+    .header__menu-mobile.active div:first-of-type {
+        transform: translateY(12px) rotate(45deg);
+        transition: all 0.2s;
+    }
+
+    .header__menu-mobile.active div:nth-of-type(2){
         opacity: 0;
     }
 
-    .header__menu-mobile.active #menu1 {
-        transform: translateY(12px) rotate(45deg);
-        transition: 0.3s;
-    }
-
-    .header__menu-mobile.active #menu3 {
+    .header__menu-mobile.active div:last-of-type {
         transform: translateY(-12px) rotate(-45deg);
-        transition: 0.3s;
+        transition: all 0.2s;
     }
 
     /* Posicionando a lista */
 
     .header__list{
-        position: fixed;
+        position: absolute;
         top: -100%;
         left: 0;
         gap: 0;
         background-color: var(--black);
         width: 100%;
-        transition: 0.3s;
+        transition: 0.35s;
         padding-bottom: 1em;
+
+        z-index: 1;
     }
 
     .header__list ul {
@@ -95,6 +97,6 @@
 
     .header__list.active {
         display: flex;
-        top: 96px;
+        top: 100px;
     }
 }
