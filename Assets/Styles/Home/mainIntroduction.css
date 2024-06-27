@@ -5,7 +5,22 @@
 
 .main__introduction > div{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    gap: var(--space);
+
+    position: relative;
+}
+
+.introduction__text > div{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 0 0 80px;
+    
+    gap: var(--space);
 }
 
 .introduction__text h1{
@@ -13,6 +28,8 @@
     font-weight: 600;
     font-size: 4rem;
     color: var(--white);
+
+    margin: 0 0 calc(var(--space) - 5px) 0;
 }
 
 .introduction__text h1 > span{
@@ -21,4 +38,49 @@
 
 .introduction__text p{
     color: var(--grey4);
+
+    margin: 0 0 calc(var(--space)/2) 0;
+}
+
+.introduction__text button{
+    width: 210px;
+    height: 55px;
+
+    background-image: linear-gradient(180deg, var(--yellow-light), var(--yellow-dark));
+    color: var(--brown);
+    border-radius: 5px;
+
+    font-family: var(--secundary-font);
+    font-weight: 600;
+    font-size: 1.125rem;
+
+    box-sizing: 0 1px 2px var(--shadow);
+}
+
+.introduction__bike img{
+    width: 100%;
+    max-width: 640px;
+    max-height: 800px;
+    min-width: 240px;
+    min-height: 300px;
+
+    border-radius: 5px;
+    margin: 0 0 -160px 0;
+}
+
+@media (max-width: 1000px){
+
+    .main__introduction > div{
+        flex-direction: column;
+        padding: 0 0 var(--space) 0;
+    }
+
+    .introduction__text > div{
+        padding: 0;
+        max-width: 640px;
+    }
+
+    .introduction__bike img{
+        margin: 0;
+    }
 }
