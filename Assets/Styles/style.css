@@ -4,6 +4,7 @@
 /* home */
 @import 'Home/mainIntroduction.css';
 @import 'Home/mainChoice.css';
+@import 'Home/mainSpecification.css';
 
 /* bicicletas */
 @import 'bicicletas/nossas-bicicletas-main.css';
@@ -47,7 +48,7 @@
     --grey11: #141414;
 }
 
-h1, h2, h3, h4, h5, h6, p, li, label, input{
+h1, h2, h3, h4, h5, h6, p, li, label, input, a{
     font-family: var(--primary-font);
 }
 
