@@ -88,6 +88,8 @@
     border-radius: 5px;
 }
 
+/* Inserindo a cor de fundo preta no segundo produto e dando um espaço de fundo branco */
+
 #products__black-background {
     background-color: var(--grey11);
     box-shadow: inset 220px 0 var(--white);
@@ -121,6 +123,8 @@
         width: 100%;
     }
 
+    /* Colocando o detalhe do fundo no topo com order */
+
     .products__images {
         order: 2;
         width: 80%;
@@ -141,6 +145,8 @@
     .products__itens {
         flex-direction: column;
     }
+
+    /* Removendo o espaço branco no fundo preto */
 
     #products__black-background {
         box-shadow: none;
