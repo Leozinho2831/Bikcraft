@@ -1,0 +1,33 @@
+.our-bikes {
+    padding: var(--space) 0 var(--space) 10%;
+
+    background-color: var(--black);
+}
+
+.our-bikes h3 {
+    color: var(--grey5);
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    padding: 1em 0;
+}
+
+.our-bikes h1 {
+    color: var(--white);
+
+    font-family: var(--secundary-font);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+    .our-bikes h3{
+        font-size: 1.125rem;
+    }
+
+    .our-bikes h1 {
+        font-size: 3rem;
+    }
+}
