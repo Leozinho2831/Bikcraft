@@ -32,10 +32,6 @@
     margin: 0 0 calc(var(--space) - 5px) 0;
 }
 
-.introduction__text h1 > span{
-    color: var(--yellow-light);
-}
-
 .introduction__text p{
     color: var(--grey4);
 
