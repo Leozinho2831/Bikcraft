@@ -139,6 +139,7 @@ hr {
 
 @media (max-width: 700px) {
     .footer__itens {
+        flex-direction: column;
         gap: 0;
     }
 
