@@ -4,14 +4,14 @@
     display: flex;
     flex-direction: column;
     gap: var(--space);
-
-    background-color: var(--white);
 }
 
 .products__itens {
     display: flex;
     justify-content: center;
     gap: var(--space);
+
+    padding: var(--space) 0;
 }
 
 .products__itens-container {
@@ -79,9 +79,85 @@
 .products__details a {
     background-color: var(--yellow-light);
     color: var(--brown);
+
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 180px;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+/* Inserindo a cor de fundo preta no segundo produto e dando um espaço de fundo branco */
+
+#products__black-background {
+    background-color: var(--grey11);
+    box-shadow: inset 220px 0 var(--white);
+}
+
+#products__black-background-subtitle {
+    color: var(--white);
+}
+
+#products__black-background-text {
+    color: var(--grey4);
 }
 
 .fundo__detalhe {
     width: 52px;
     height: 52px;
+}
+
+@media (max-width: 1200px) {
+    .products {
+        align-items: center;
+    }
+    
+    .products__itens-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .products__images img {
+        width: 100%;
+    }
+
+    /* Colocando o detalhe do fundo no topo com order */
+
+    .products__images {
+        order: 2;
+        width: 80%;
+    }
+
+    .products__informations {
+        order: 3;
+        width: 80%;
+    }
+
+    .fundo__detalhe {
+        order: 1;
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .products__itens {
+        flex-direction: column;
+    }
+
+    /* Removendo o espaço branco no fundo preto */
+
+    #products__black-background {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .products__details {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+    }
 }
