@@ -107,16 +107,35 @@
 }
 
 @media (max-width: 1200px) {
+    .products {
+        align-items: center;
+    }
+    
     .products__itens-container {
         flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .products__images img {
         width: 100%;
     }
 
+    .products__images {
+        order: 2;
+        width: 80%;
+    }
+
+    .products__informations {
+        order: 3;
+        width: 80%;
+    }
+
     .fundo__detalhe {
-        display: none;
+        order: 1;
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .products__itens {
@@ -125,5 +144,14 @@
 
     #products__black-background {
         box-shadow: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .products__details {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
     }
 }
