@@ -55,6 +55,7 @@
 }
 
 @media (min-width: 570px){
+
     .main__choice h1{
         font-size: 4rem;
     }
@@ -73,8 +74,8 @@
     }
 }
 
-@media(min-width: 1480px){
-    .main__choice{
+@media(min-width: 1520px){
+    .choice__margin{
         max-width: 1520px;
         margin: 0 auto;
     }
@@ -83,4 +84,12 @@
         text-indent: 150px;
         text-align: start;
     }
+}
+
+@media(max-width: 570px){
+
+    .main__choice{
+        padding: 30px;
+    }
+
 }
