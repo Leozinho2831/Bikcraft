@@ -5,6 +5,7 @@
 @import 'Home/mainIntroduction.css';
 @import 'Home/mainChoice.css';
 @import 'Home/mainSpecification.css';
+@import 'Home/mainAssociate.css';
 
 /* bicicletas */
 @import 'bicicletas/nossas-bicicletas-main.css';
