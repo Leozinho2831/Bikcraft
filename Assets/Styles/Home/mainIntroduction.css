@@ -29,13 +29,13 @@
     font-size: 4rem;
     color: var(--white);
 
-    margin: 0 0 calc(var(--space) - 5px) 0;
+    margin: 0 0 35px 0;
 }
 
 .introduction__text p{
     color: var(--grey4);
 
-    margin: 0 0 calc(var(--space)/2) 0;
+    margin: 0 0 20px 0;
 }
 
 .introduction__text button{
