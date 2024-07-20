@@ -20,6 +20,25 @@
     width: 80%;
 }
 
+.products__images {
+    position: relative;
+}
+
+.products__prices {
+    position: absolute;
+    top: 5%;
+    right: 0%;
+
+    background-color: var(--black);
+    color: var(--white);
+
+    font-weight: 500;
+    font-size: 1.125rem;
+
+    padding: 8px 12px;
+    border-radius: 5px 0 0 5px;
+}
+
 .products__informations {
     display: flex;
     flex-direction: column;
