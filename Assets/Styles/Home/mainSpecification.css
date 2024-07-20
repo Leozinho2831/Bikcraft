@@ -1,11 +1,11 @@
 .main__specification{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 200px 1fr 200px;
+    grid-template-columns: 50px 2fr 1fr;
+    grid-template-rows: 200px 700px 200px;
     grid-template-areas: 
-    'decoration-superior image'
-    'content image'
-    'decoration-inferior image';
+    'decoration-superior decoration-superior image'
+    'content content image'
+    'decoration-inferior decoration-inferior image';
     gap: var(--space);
     padding: var(--space);
 
@@ -17,7 +17,8 @@
 .specification__infos{
     grid-area: content;
     justify-self: center;
-    max-width: 900px;
+    max-width: 1600px;
+    margin: 0 0 0 80px;
 
     display: grid;
     align-items: center;
@@ -99,8 +100,8 @@
 @media(max-width: 1320px){
 
     .main__specification{
-        grid-template-columns: 1fr;
-        grid-template-rows: 70px 1fr 70px;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 50px 1fr 50px;
 
         box-shadow: none;
     }
