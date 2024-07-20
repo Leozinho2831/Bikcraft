@@ -126,7 +126,11 @@
     .main__specification{
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 30px;
+    }
+
+    .specification__infos{
+        margin: 0;
     }
 
     .infos__text h2{
