@@ -1,7 +1,7 @@
 .our-bikes {
     padding: var(--space) 0 var(--space) 15%;
 
-    background-color: var(--black);
+    background-color: var(--grey11);
 }
 
 .our-bikes h3 {
