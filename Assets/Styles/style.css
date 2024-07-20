@@ -6,6 +6,7 @@
 @import 'Home/mainChoice.css';
 @import 'Home/mainSpecification.css';
 @import 'Home/mainAssociate.css';
+@import 'Home/mainTestimony.css';
 
 /* bicicletas */
 @import 'bicicletas/nossas-bicicletas-main.css';
@@ -120,8 +121,4 @@ a {
 
 h1 > span{
     color: var(--yellow-light);
-}
-
-cite > span{
-    color: var(--yellow-burn);
 }
