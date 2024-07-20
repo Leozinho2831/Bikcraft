@@ -162,6 +162,8 @@
     border: 1px solid var(--grey11);
 }
 
+/* posicionando o detalhe do fundo com position absolute */
+
 .bike__background-detail {
     position: absolute;
     bottom: 0%;
