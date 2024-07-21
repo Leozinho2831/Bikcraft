@@ -27,6 +27,10 @@
     .main__safe div:first-child h1{
         margin: 20px 0 0;
     }
+
+    .main__safe > div:first-child p{
+        margin: 0;
+    }
 }
 
 @media(max-width: 480px){
