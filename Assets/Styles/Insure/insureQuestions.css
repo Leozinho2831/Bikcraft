@@ -10,6 +10,7 @@
 }
 
 .questions > div{
+    cursor: pointer;
     padding: 20px;
 }
 
