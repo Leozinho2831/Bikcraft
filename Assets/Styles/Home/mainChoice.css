@@ -38,6 +38,8 @@
     font-size: 1.25rem;
 
     margin: 0 0 5px 0;
+
+    color: var(--grey11);
 }
 
 .bikes > h2::before{
