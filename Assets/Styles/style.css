@@ -16,6 +16,11 @@
 @import 'bicicletas/choose-one.css';
 @import 'bicicletas/insurance.css';
 
+/* contato */
+
+@import 'contato/contact.css';
+@import 'contato/locations.css';
+
 /* insure */
 @import 'Insure/insureIntroduction.css';
 @import 'Insure/insureAdvantage.css';
