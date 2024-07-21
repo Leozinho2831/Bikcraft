@@ -19,7 +19,7 @@
             <div class="header__list">
                 <ul>
                     <li><a href="bicicletas.html">Bicicletas</a></li>
-                    <li><a href="#">Seguros</a></li>
+                    <li><a href="seguro.html">Seguros</a></li>
                     <li><a href="contato.html" id="underLine">Contato</a></li>
                 </ul>
             </div>
@@ -33,35 +33,56 @@
     </header>
 
     <main>
+        
+        <!-- Reaproveitando o código para o titulo -->
+
         <section class="our-bikes" id="flex">
             <div>
                 <h3>respostas em até 24h</h3>
                 <h1>nosso contato<span>.</span></h1>
             </div>
-            <img src="../Images/Components/decoration bike superior.svg" alt="">
+
+            <!-- detalhe no fundo -->
+
+            <img src="../Images/Components/decoration bike superior.svg" alt="detalhe do fundo">
         </section>
 
         <section class="contact">
+
+            <!-- informações da loja -->
+
             <div class="contact__data">
                 <h3>Loja Online</h3>
                 <div class="contact__data-container">
+
+                    <!-- localização -->
+
                     <div class="contact__data-itens">
                         <img src="../Images/Components/local.svg" alt="Icone de gps">
                         <p>Rua Ali Perto, 55
                         <br>Governador Valadares - MG
                         <br>Brasil - Terra - Via Láctea</p>
                     </div>
+
+                    <!-- emails -->
+
                     <div class="contact__data-itens">
                         <img src="../Images/Components/email.svg" alt="Icone de email">
                         <p>vendas@bikcraft.com
                         <br>assistencia@bikcraft.com</p>
                     </div>
+
+                    <!-- telefone -->
+
                     <div class="contact__data-itens">
                         <img src="../Images/Components/phone.svg" alt="Icone de telefone">
                         <p>+55 33 9999-9999</p>
                     </div>
                     
                 </div>
+
+                <!-- redes sociais -->
+
                 <div class="contact__media">
                     <div class="contact__media-itens">
                         <a href="#"><img src="../Images/Components/instagram-p.svg" alt="Logo do instagram"></a>
@@ -73,12 +94,23 @@
                         <a href="#"><img src="../Images/Components/facebook-p.svg" alt="Logo do facebook"></a>
                     </div>
                 </div>
+
+                <!-- detalhe no fundo -->
+
                 <img src="../Images/Components/decoration home inferior.svg" class="contact__decoration">
+
+                <!-- detalhe no fundo para telas menores de 800px -->
+
                 <img src="../Images/Components/detalhe contato inferior.svg" class="form__decoration" id="decoration__mobile">
             </div>
 
+            <!-- formulário -->
+
             <form action="" class="form">
                 <div class="form__personal-data">
+
+                    <!-- nome e telefone -->
+
                     <div class="form__personal-data-itens">
                         <label for="nome">Nome</label>
                         <input type="text" placeholder="Seu nome" name="nome">
@@ -88,27 +120,42 @@
                         <input type="tel" placeholder="(33) 9999-9999">
                     </div>
                 </div>
+
+                <!-- email -->
+
                 <div class="form__mail">
                     <label for="mail">Email</label>
                     <input type="email" name="mail" placeholder="contato@email.com">
                 </div>
+
+                <!-- mensagem a ser enviada para o suporte -->
+
                 <div class="form__textarea">
                     <label for="mensagem">Mensagem</label>
                     <textarea name="mensagem" placeholder="O que você precisa?"></textarea>
                 </div>
 
+                <!-- botao enviar mensagem com div reaproveitada da sessão bikes -->
+
                 <div class="bike__about-container">
                     <a href="">ENVIAR MENSAGEM</a>
                 </div>
+
+                <!-- detalhe no fundo -->
 
                 <img src="../Images/Components/detalhe contato inferior.svg" class="form__decoration">
             </form>
         </section>
 
+        <!-- localização das lojas -->
+
         <section class="locations">
             <h1>lojas locais<span>.</span></h1>
 
             <div class="locations__container">
+
+                <!-- card 1 -->
+
                 <div class="locations__card">
                     <div class="locations__image">
                         <img src="../Images/Images contact/Minas.png" alt="Foto no gps com localização da empresa">
@@ -135,6 +182,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- card 2 -->
                 
                 <div class="locations__card">
                     <div class="locations__image">
@@ -201,7 +250,7 @@
                         <h2>INFORMAÇÕES</h2>
                         <nav class="footer__informations-nav">
                             <a href="bicicletas.html">Bicicletas</a>
-                            <a href="">Seguros</a>
+                            <a href="seguro.html">Seguros</a>
                             <a href="contato.html">Contato</a>
                             <a href="">Termos e condições</a>
                         </nav>

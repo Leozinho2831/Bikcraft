@@ -1,3 +1,5 @@
+/* usando box shadow para aparentar estar entre sessões */
+
 .contact {
     display: flex;
     justify-content: center;
@@ -97,6 +99,15 @@
 
     border-radius: 5px;
     border: solid 1px var(--grey2);
+
+    font-weight: 400;
+    font-size: 1rem;
+
+    padding-left: 10px;
+}
+
+.form input:active {
+    border: 1px solid var(--grey4);
 }
 
 .form input::placeholder {
@@ -104,8 +115,6 @@
 
     font-weight: 400;
     font-size: 1rem;
-
-    padding-left: 10px;
 }
 
 .form__personal-data {
@@ -124,6 +133,14 @@
 
     background-color: var(--grey1);
     border: 1px solid var(--grey2);
+
+    font-weight: 400;
+    font-size: 1rem;
+
+    padding-top: 10px;
+    padding-left: 10px;
+
+    resize: none;
 }
 
 .form textarea::placeholder {
@@ -131,9 +148,6 @@
 
     font-weight: 400;
     font-size: 1rem;
-
-    padding-top: 10px;
-    padding-left: 10px;
 }
 
 .form__decoration {
