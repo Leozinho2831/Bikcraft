@@ -30,6 +30,9 @@
 .header__menu-mobile {
     width: 80px;
     height: 30%;
+
+    cursor: pointer;
+
     display: none;
     justify-content: space-between;
     flex-direction: column;
