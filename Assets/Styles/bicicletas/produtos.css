@@ -96,7 +96,7 @@
 }
 
 .products__details a {
-    background-color: var(--yellow-light);
+    background-image: linear-gradient(180deg, var(--yellow-light), var(--yellow-dark));;
     color: var(--brown);
 
     display: flex;
@@ -105,6 +105,10 @@
     width: 180px;
     padding: 16px;
     border-radius: 5px;
+
+    font-family: var(--secundary-font);
+    font-weight: 600;
+    font-size: 1.125rem;
 }
 
 /* Inserindo a cor de fundo preta no segundo produto e dando um espaço de fundo branco */
