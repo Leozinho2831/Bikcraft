@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Seguros</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+
+            <!--Logo da BikCraft-->
+            <div class="header__image">
+                <a href="../../index.html"><img src="../Images/Components/bikcraft.svg" alt="Logo do Bikcraft"></a>
+            </div>
+
+            <!--Menu de seleção-->
+            <div class="header__list">
+                <ul>
+                    <li><a href="bicicletas.html">Bicicletas</a></li>
+                    <li><a href="seguro.html">Seguros</a></li>
+                    <li><a href="contato.html" id="underLine">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="header__menu-mobile">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+            
+        <!-- Reaproveitando o código para o titulo -->
+
+        <section class="our-bikes" id="flex">
+            <div>
+                <h3>cotações no seu email</h3>
+                <h1>solicite um orçamento<span>.</span></h1>
+            </div>
+
+            <!-- detalhe no fundo -->
+
+            <img src="../Images/Components/decoration bike superior.svg" alt="detalhe do fundo">
+        </section>
+
+        <section class="budget">
+            <form class="budget__bike">
+                <div class="budget__bik-or-insurance">
+                    <div class="budget__bik-or-insurance-text">
+                        <span class="traco" id="traco-vertical"></span>
+                        <label for="seguro">BIKCRAFT OU SEGURO?</label>
+                    </div>
+                    <div class="budget__radio-container">
+                        <div class="budget__radio">
+                            <input type="radio" name="seguro" id="bikcraftoption">
+                            <label for="bikcraftoption">Bikcraft</label>
+                        </div>
+                        <div class="budget__radio">
+                            <input type="radio" name="seguro" id="insuranceoption">
+                            <label for="insuranceoption">Seguro</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="budget__bikes-options">
+                    <div class="budget__bikes-options-text">
+                        <span class="traco" id="traco-vertical"></span>
+                        <label for="bikes">ESCOLHA A SUA:</label>
+                    </div>
+                    <div class="budget__radio-container2">
+                        <div class="budget__radio">
+                            <input type="radio" name="bikes" id="nimbus">
+                            <label for="nimbus">Nimbus Stark</label>
+                        </div>
+                        <div class="budget__radio">
+                            <input type="radio" name="bikes" id="nebula">
+                            <label for="nebula">Nebula Cosmic</label>
+                        </div>
+                        <div class="budget__radio">
+                            <input type="radio" name="bikes" id="magic">
+                            <label for="magic">Magic Might</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__itens">
+                <figure>
+                    <img src="../Images/Components/decoration footer.svg">
+                </figure>
+                <div class="footer__container">
+                    <div class="footer__container-itens">
+                        <div class="footer__logo">
+                            <img src="../Images/Components/bikcraft.svg" alt="Logo da Bikcraft">
+                        </div>
+                        <div class="footer__contact">
+                            <h2>CONTATO</h2>
+                            <nav class="footer__contact-nav">
+                                <a href="tel:553399999999">+55 33 9999-9999</a>
+                                <a href="malito:contato@bikcraft.com">contato@bikcraft.com</a>
+                            </nav>
+                            <hr>
+                            <div class="footer__contact-text">
+                                <p>Rua Ali Perto, 55 - Ibituruna</p>
+                                <p>Governador Valadares - MG</p>
+                            </div>
+                            <hr>
+                            <nav class="footer__contact-socialmedia">
+                                <a href="#"><img src="../Images/Components/instagram.svg" alt="Logo do Instagram"></a>
+                                <a href="#"><img src="../Images/Components/youtube.svg" alt="Logo do Youtube"></a>
+                                <a href="#"><img src="../Images/Components/facebook.svg" alt="Logo do Facebook"></a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer__informations">
+                        <h2>INFORMAÇÕES</h2>
+                        <nav class="footer__informations-nav">
+                            <a href="bicicletas.html">Bicicletas</a>
+                            <a href="seguro.html">Seguros</a>
+                            <a href="contato.html">Contato</a>
+                            <a href="">Termos e condições</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer__direitos">Bikcraft © Alguns Direitos Reservados.</p>
+    </footer>
+    
+    <script src="../Javascript/menu.js"></script>
+</body>
