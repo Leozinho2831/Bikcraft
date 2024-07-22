@@ -49,45 +49,108 @@
         </section>
 
         <section class="budget">
-            <form class="budget__bike">
-                <div class="budget__bik-or-insurance">
-                    <div class="budget__bik-or-insurance-text">
-                        <span class="traco" id="traco-vertical"></span>
-                        <label for="seguro">BIKCRAFT OU SEGURO?</label>
+
+            <form action="#" class="budget__choice">
+
+                <div>
+                    <h2>BIKCRAFT OU SEGURO?</h2>
+
+                    <div class="choice__inputs">
+                        <input type="radio" name="Checked" id="Bikecraft">
+                        <label for="Bikecraft">Bikcraft</label>
+                        <input type="radio" name="Checked" id="Seguro">
+                        <label for="Seguro">Seguro</label>
                     </div>
-                    <div class="budget__radio-container">
-                        <div class="budget__radio">
-                            <input type="radio" name="seguro" id="bikcraftoption">
-                            <label for="bikcraftoption">Bikcraft</label>
-                        </div>
-                        <div class="budget__radio">
-                            <input type="radio" name="seguro" id="insuranceoption">
-                            <label for="insuranceoption">Seguro</label>
-                        </div>
+
+                    <h2>ESCOLHA A SUA :</h2>
+
+                    <div class="budget__bike">
+
+                         <div class="choice__inputs">
+                            <input type="radio" name="Nimbus" id="Nimbus">
+                            <label for="Nimbus">Nimbus Stark 
+                                <p>R$ 4499</p>
+                                <div>
+                                    <h3>Motor Elétrico</h3>
+                                    <h3>Fibra de Carbono</h3>
+                                    <h3>40 km/h</h3>
+                                    <h3>Rastreador</h3>
+                                    <img width="140px" height="86px" src="" alt="Bicicleta Nimbus">
+                                    <!-- coloca as imagens nas 3 pq não achei as pequenas que vc usou no bicicletas internas -->
+                                </div>
+                            </label>
+                            <input type="radio" name="Nebula" id="Nebula">
+                            <label for="Nebula">Nebula Cosmic
+                                <p>R$ 3999</p>
+                                <div>
+                                    <h3></h3>
+                                    <h3></h3>
+                                    <h3></h3>
+                                    <h3></h3>
+                                    <img src="" alt="Nebula Cosmic">
+                                </div>
+                            </label>
+                            <input type="radio" name="Magic" id="Magic">
+                            <label for="Magic">Magic Might
+                                <p>R$ 2499</p>
+                                <div>
+                                    <h3></h3>
+                                    <h3></h3>
+                                    <h3></h3>
+                                    <h3></h3>
+                                    <img src="" alt="Bicicleta Magic Might">
+                                </div>
+                            </label>
+                         </div>
+                    </div>
+    
+                    <!-- somente para mim não ver agora o style, ignore, mas não esqueça dele -->
+                    <div class="choice__insurance" style="display: none;">
+                        <h2>ESCOLHA A SUA :</h2>
+    
+                        <input type="radio">
+                        <label for="">Gold</label>
+                        <input type="radio">
+                        <label for="">Silver</label>
                     </div>
                 </div>
 
-                <div class="budget__bikes-options">
-                    <div class="budget__bikes-options-text">
-                        <span class="traco" id="traco-vertical"></span>
-                        <label for="bikes">ESCOLHA A SUA:</label>
-                    </div>
-                    <div class="budget__radio-container2">
-                        <div class="budget__radio">
-                            <input type="radio" name="bikes" id="nimbus">
-                            <label for="nimbus">Nimbus Stark</label>
-                        </div>
-                        <div class="budget__radio">
-                            <input type="radio" name="bikes" id="nebula">
-                            <label for="nebula">Nebula Cosmic</label>
-                        </div>
-                        <div class="budget__radio">
-                            <input type="radio" name="bikes" id="magic">
-                            <label for="magic">Magic Might</label>
-                        </div>
-                    </div>
-                </div>
+                <!-- decoration bottom orçamento -->
+                <figure>
+                    <img src="../Images/Components/decoration budget inferior.svg" alt="detalhe em pontos">
+                </figure>
             </form>
+
+            <form action="#" class="budget__form">
+                <input type="text">
+            </form>
+<!-- 
+            <div class="budget__bikes-options">
+
+                <div class="budget__bikes-options-text">
+                    <span class="traco" id="line-vertical"></span>
+                    <label for="bikes">ESCOLHA A SUA:</label>
+                </div>
+
+                <div class="budget__radio-container2">
+
+                    <div class="budget__radio">
+                        <input type="radio" name="bikes" id="nimbus">
+                        <label for="nimbus">Nimbus Stark</label>
+                    </div>
+                    <div class="budget__radio">
+                        <input type="radio" name="bikes" id="nebula">
+                        <label for="nebula">Nebula Cosmic</label>
+                    </div>
+                    <div class="budget__radio">
+                        <input type="radio" name="bikes" id="magic">
+                        <label for="magic">Magic Might</label>
+                    </div>
+
+                </div>
+
+            </div> -->
+
         </section>
     </main>
 
