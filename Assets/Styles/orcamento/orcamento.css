@@ -57,6 +57,11 @@
     margin: 0;
 }
 
+.budget__radio input:checked ~ .budget__radio {
+    background-color: var(--grey1);
+    color: var(--grey11);
+}
+
 #traco-vertical {
     transform: translateY(0px) rotate(90deg);
 
