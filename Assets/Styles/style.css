@@ -26,6 +26,10 @@
 @import 'Insure/insureAdvantage.css';
 @import 'Insure/insureQuestions.css';
 
+/* orçamento */
+
+@import 'orcamento/orcamento.css';
+
 /* terms */
 @import 'Terms/termsInfos.css';
 

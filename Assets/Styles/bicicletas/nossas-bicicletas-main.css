@@ -45,4 +45,8 @@
     #flex img {
         display: none;
     }
+
+    .our-bikes {
+        padding: var(--space) 0 var(--space) 5%;
+    }
 }
