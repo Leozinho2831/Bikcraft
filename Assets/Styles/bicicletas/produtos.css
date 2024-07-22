@@ -101,14 +101,16 @@
 
     display: flex;
     justify-content: space-evenly;
+    gap: 8px;
 
-    width: 180px;
-    padding: 16px;
+    max-width: 195px;
+    padding: 16px 32px;
     border-radius: 5px;
 
     font-family: var(--secundary-font);
     font-weight: 600;
     font-size: 1.125rem;
+    line-height: 24px;
 }
 
 /* Inserindo a cor de fundo preta no segundo produto e dando um espaço de fundo branco */
