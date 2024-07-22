@@ -199,14 +199,20 @@
 
     .bike__images-secundary {
         justify-content: center;
+        width: 100%;
     }
 
     .bike__images-secundary img {
-        width: 45%;
+        width: 100%;
     }
 
     .bike__details {
         width: 95%;
+    }
+
+    .bike__about-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .bike__about-container-texts {
