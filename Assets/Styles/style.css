@@ -28,7 +28,8 @@
 
 /* orçamento */
 
-@import 'orcamento/orcamento.css';
+@import 'orcamento/orcamentoBike.css';
+@import 'orcamento/orcamentoPlan.css';
 
 /* terms */
 @import 'Terms/termsInfos.css';
