@@ -69,7 +69,7 @@
     --border: #d9d9d9;
 }
 
-h1, h2, h3, h4, h5, h6, p, li, label, input, a{
+h1, h2, h3, h4, h5, h6, p, li, label, input, a, textarea{
     font-family: var(--primary-font);
 }
 
