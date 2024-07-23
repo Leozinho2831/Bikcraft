@@ -1,11 +1,4 @@
-.budget{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow: inset 0 475px var(--grey11),
-                inset 0 -475px var(--grey1);
-}
+/* começa a partir do primeiro form */
 
 .budget__choice{
     display: flex;
@@ -30,7 +23,8 @@
     width: 100%;
 }
 
-.budget__choice div h2{
+.budget__bike > h2,
+.budget__insurance > h2{
     font-family: var(--secundary-font);
     font-size: 0.75rem;
     font-weight: 600;
@@ -38,9 +32,11 @@
     letter-spacing: 1.5%;
 
     color: var(--grey4);
+    margin: 0 0 20px 0;
 }
 
-.budget__choice div h2::before{
+.budget__bike > h2::before,
+.budget__insurance > h2::before{
     content: '';
     display: inline-block;
     width: 4px;
@@ -50,22 +46,9 @@
     background-image: linear-gradient(180deg, var(--yellow-light), var(--yellow-dark));
 }
 
-.choice__inputs{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 0 0 0 12px;
-}
-
-.choice__inputs:has(label > p){
-    flex-direction: column;
-}
-
-.choice__inputs input{
-    display: none;
-}
-
-.choice__inputs label{
+/* estilizando todos os labels dentro do form */
+.budget__choice label,
+.budget__insurance label{
     font-family: var(--secundary-font);
     font-weight: 500;
     font-size: 1rem;
@@ -79,73 +62,114 @@
     max-width: 160px;
     padding: 16px;
 
-    display: block;
-    /* display block para label ocupar 100% */
+    cursor: pointer;
 }
 
-#Bikecraft:checked ~ label[for='Bikecraft'],
+.choice__inputs,
+.choice__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 0 0 12px;
+}
+
+.choice__items:has(label > p){
+    flex-direction: column;
+}
+
+.choice__inputs input,
+.choice__items input{
+    display: none;
+}
+
+/* selecionando label irmão quando input estiver ativo */
+#Bikcraft:checked ~ label[for='Bikcraft'],
 #Seguro:checked ~ label[for='Seguro'],
 #Nimbus:checked ~ label[for ='Nimbus'],
 #Nebula:checked ~ label[for ='Nebula'],
-#Magic:checked ~ label[for ='Magic']{
+#Magic:checked ~ label[for ='Magic'],
+#planGold:checked ~ label[for = 'planGold'],
+#planSilver:checked ~ label[for = 'planSilver']{
     color: var(--grey11);
     background-color: var(--white);
 }
 
-.choice__inputs > label::before{
+.choice__inputs > label::before,
+.choice__items > label::before,
+.budget__insurance > label::before{
     content: '';
     display: inline-block;
     width: 12px;
     height: 12px;
     margin: 0 8px 0 0;
 
-    border: 1px solid var(--grey7);
+    border: 1px solid var(--grey6);
     border-radius: 100%;
 }
 
-#Bikecraft:checked ~ label[for='Bikecraft']::before,
-#Seguro:checked ~ label[for='Seguro']::before,
-#Nimbus:checked ~ label[for ='Nimbus']::before,
-#Nebula:checked ~ label[for ='Nebula']::before,
-#Magic:checked ~ label[for ='Magic']::before{
-    border: 1px solid var(--grey7);
+/* criando before quando input estiver ativo */
+#Bikcraft:checked ~ label[for = 'Bikcraft']::before,
+#Seguro:checked ~ label[for = 'Seguro']::before,
+#Nimbus:checked ~ label[for = 'Nimbus']::before,
+#Nebula:checked ~ label[for = 'Nebula']::before,
+#Magic:checked ~ label[for = 'Magic']::before,
+#planGold:checked ~ label[for = 'planGold']::before,
+#planSilver:checked ~ label[for = 'planSilver']::before{
+    border: 1px solid var(--grey8);
     box-shadow: inset 0 0 0 3px var(--white),
-                inset 0 0 0 6px var(--grey7);
+                inset 0 0 0 6px var(--grey8);
 }
 
-.choice__inputs > label:has(p){
+/* todo label que tem um p dentro fara isso */
+.choice__items > label:has(p){
     width: 100%;
     max-width: 340px;
+    position: relative;
 }
 
-.choice__inputs > label > p{
+/* position absolute para posicionar o p no canto direito */
+.choice__items > label > p{
     display: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
     
     font-family: var(--secundary-font);
     font-size: 0.9rem;
     line-height: 16px;
-    /* preciso alinhar esse p de alguma forma no final */
 }
 
-.choice__inputs > label > div{
+.choice__items > label > div{
     display: none;
-
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: repeat(2, auto);
-    grid-template-areas: 
-    'text1 image'
-    'text2 image'
-    'text3 image'
-    'text4 image';
+    justify-content: space-between;
+    align-items: center;
 
     gap: 16px;
+    margin: 20px 0 0 0;
 }
 
-.choice__inputs > label > div > img{
-    grid-area: image;
+#Nimbus:checked ~ label[for = 'Nimbus'] > p,
+#Nebula:checked ~ label[for = 'Nebula'] > p,
+#Magic:checked ~ label[for = 'Magic'] > p,
+#planGold:checked ~ label[for = 'planGold'] > p,
+#planSilver:checked ~ label[for = 'planSilver'] > p{
+    display: inline-block;
 }
 
-.choice__inputs > label > div > h3{
+#Nimbus:checked ~ label[for = 'Nimbus'] > div,
+#Nebula:checked ~ label[for = 'Nebula'] > div,
+#Magic:checked ~ label[for = 'Magic'] > div,
+#planGold:checked ~ label[for = 'planGold'] > div,
+#planSilver:checked ~ label[for = 'planSilver'] > div{
+    display: flex;
+}
+
+.inputs__infos li{
+    display: flex;
+    gap: 8px;
+}
+
+.inputs__infos li h3{
     font-family: var(--secundary-font);
     font-weight: 500;
     font-size: 0.75rem;
@@ -154,38 +178,21 @@
     color: var(--grey8);
 }
 
-.choice__inputs > label > div h3:first-of-type::before{
-    
+.inputs__infos li img{
+    width: 16px;
+    height: 16px;
 }
 
-.choice__inputs > label > div > h3:nth-of-type(2)::before{
-
+/* selecionando todas as div dentor de inputs__infos menos a primeira */
+.inputs__infos li:not(:first-of-type){
+    margin: 8px 0 0 0;
 }
 
-.choice__inputs > label > div > h3:nth-of-type(3)::before{
-
-}
-
-.choice__inputs > label > div > h3:last-of-type::before{
-
-}
-
-#Nimbus:checked ~ label[for = 'Nimbus'] > p,
-#Nebula:checked ~ label[for ='Nebula'] > p,
-#Magic:checked ~ label[for ='Magic'] > p{
-    display: inline;
-}
-
-#Nimbus:checked ~ label[for = 'Nimbus'] > div,
-#Nebula:checked ~ label[for ='Nebula'] > div,
-#Magic:checked ~ label[for ='Magic'] > div{
-    display: grid;
-}
-
-.budget__form{
+.choice__inputs > label > div > img{
     width: 100%;
-    max-width: 740px;
-    padding: var(--space);
+    max-width: 140px;
+}
 
-    background-color: var(--white);
+.disableOption{
+    display: none;
 }

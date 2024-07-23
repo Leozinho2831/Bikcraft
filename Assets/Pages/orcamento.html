@@ -56,63 +56,161 @@
                     <h2>BIKCRAFT OU SEGURO?</h2>
 
                     <div class="choice__inputs">
-                        <input type="radio" name="Checked" id="Bikecraft">
-                        <label for="Bikecraft">Bikcraft</label>
-                        <input type="radio" name="Checked" id="Seguro">
+
+                        <input type="checkbox" name="Checked" id="Bikcraft" onchange="choiceItem()">
+                        <label for="Bikcraft">Bikcraft</label>
+                        <input type="checkbox" name="Checked" id="Seguro" onchange="choiceItem()">
                         <label for="Seguro">Seguro</label>
+
                     </div>
 
-                    <h2>ESCOLHA A SUA :</h2>
+                    <div class="budget__bike disableOption">
+                        <h2>ESCOLHA A SUA :</h2>
 
-                    <div class="budget__bike">
+                         <div class="choice__items">
 
-                         <div class="choice__inputs">
-                            <input type="radio" name="Nimbus" id="Nimbus">
+                            <input type="checkbox" name="Nimbus" id="Nimbus">
                             <label for="Nimbus">Nimbus Stark 
                                 <p>R$ 4499</p>
                                 <div>
-                                    <h3>Motor Elétrico</h3>
-                                    <h3>Fibra de Carbono</h3>
-                                    <h3>40 km/h</h3>
-                                    <h3>Rastreador</h3>
-                                    <img width="140px" height="86px" src="" alt="Bicicleta Nimbus">
-                                    <!-- coloca as imagens nas 3 pq não achei as pequenas que vc usou no bicicletas internas -->
+                                    <ul class="inputs__infos">
+                                        <li>
+                                            <img src="../Images/Components/eletrica.svg" alt=" Motocicleta">
+                                            <h3>Motor Elétrico</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/carbono.svg" alt="Fibra de Carbono">
+                                            <h3>Fibra de Carbono</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/velocidade.svg" alt="Velocímetro">
+                                            <h3>40 km/h</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/rastreador.svg" alt="Rastreador">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                    </ul>
+                                    <img src="" alt="Bicicleta Nimbus">
+                                    <!-- coloca as imagens nas 3 pq não achei as pequenas que vc usou em bicicletas internas -->
                                 </div>
                             </label>
-                            <input type="radio" name="Nebula" id="Nebula">
+
+                            <input type="checkbox" name="Nebula" id="Nebula">
                             <label for="Nebula">Nebula Cosmic
                                 <p>R$ 3999</p>
                                 <div>
-                                    <h3></h3>
-                                    <h3></h3>
-                                    <h3></h3>
-                                    <h3></h3>
+                                    <ul class="inputs__infos">
+                                        <li>
+                                            <img src="../Images/Components/eletrica.svg" alt=" Motocicleta">
+                                            <h3>Motor Elétrico</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/carbono.svg" alt="Fibra de Carbono">
+                                            <h3>Fibra de Carbono</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/velocidade.svg" alt="Velocímetro">
+                                            <h3>40 km/h</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/rastreador.svg" alt="Rastreador">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                    </ul>
                                     <img src="" alt="Nebula Cosmic">
                                 </div>
                             </label>
-                            <input type="radio" name="Magic" id="Magic">
+
+                            <input type="checkbox" name="Magic" id="Magic">
                             <label for="Magic">Magic Might
                                 <p>R$ 2499</p>
                                 <div>
-                                    <h3></h3>
-                                    <h3></h3>
-                                    <h3></h3>
-                                    <h3></h3>
+                                    <ul class="inputs__infos">
+                                        <li>
+                                            <img src="../Images/Components/eletrica.svg" alt=" Motocicleta">
+                                            <h3>Motor Elétrico</h3> 
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/carbono.svg" alt="Fibra de Carbono">
+                                            <h3>Fibra de Carbono</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/velocidade.svg" alt="Velocímetro">
+                                            <h3>40 km/h</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/rastreador.svg" alt="Rastreador">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                    </ul>
                                     <img src="" alt="Bicicleta Magic Might">
                                 </div>
                             </label>
+                            
                          </div>
                     </div>
+
+                    <div class="budget__insurance disableOption">
+                        <h2>ESCOLHA O SEU :</h2>
+                        
+                        <div class="choice__items">
+
+                            <input type="checkbox" name="planGold" id="planGold">
+                            <label for="planGold">
+                                Gold
+                                <p>R$ 299 Mensal</p>
+                                <div>
+                                    <ul class="inputs__infos">
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </label>
     
-                    <!-- somente para mim não ver agora o style, ignore, mas não esqueça dele -->
-                    <div class="choice__insurance" style="display: none;">
-                        <h2>ESCOLHA A SUA :</h2>
-    
-                        <input type="radio">
-                        <label for="">Gold</label>
-                        <input type="radio">
-                        <label for="">Silver</label>
+                            <input type="checkbox" name="planSilver" id="planSilver">
+                            <label for="planSilver">
+                                Silver
+                                <p>R$ 199 Mensal</p>
+                                <div>
+                                    <ul class="inputs__infos">
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                        <li>
+                                            <img src="../Images/Components/confere.svg" alt="Confere">
+                                            <h3>Rastreador</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </label>
+
+                        </div>
                     </div>
+
                 </div>
 
                 <!-- decoration bottom orçamento -->
@@ -124,32 +222,6 @@
             <form action="#" class="budget__form">
                 <input type="text">
             </form>
-<!-- 
-            <div class="budget__bikes-options">
-
-                <div class="budget__bikes-options-text">
-                    <span class="traco" id="line-vertical"></span>
-                    <label for="bikes">ESCOLHA A SUA:</label>
-                </div>
-
-                <div class="budget__radio-container2">
-
-                    <div class="budget__radio">
-                        <input type="radio" name="bikes" id="nimbus">
-                        <label for="nimbus">Nimbus Stark</label>
-                    </div>
-                    <div class="budget__radio">
-                        <input type="radio" name="bikes" id="nebula">
-                        <label for="nebula">Nebula Cosmic</label>
-                    </div>
-                    <div class="budget__radio">
-                        <input type="radio" name="bikes" id="magic">
-                        <label for="magic">Magic Might</label>
-                    </div>
-
-                </div>
-
-            </div> -->
 
         </section>
     </main>
@@ -200,4 +272,5 @@
     </footer>
     
     <script src="../Javascript/menu.js"></script>
+    <script src="../Javascript/formOrcamento.js"></script>
 </body>
