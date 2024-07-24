@@ -72,3 +72,19 @@ function enterPage() {
 }
 
 enterPage();
+
+function changeCheckBox(){
+
+    planGold.addEventListener('click', () =>{
+        if(planGold.checked){
+            planSilver.checked = false;
+        }
+    });
+
+    planSilver.addEventListener('click', () =>{
+        if(planSilver.checked){
+            planGold.checked = false;
+        }
+    });
+    
+};
