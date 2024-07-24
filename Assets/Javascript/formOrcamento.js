@@ -20,3 +20,20 @@ function choiceItem(){
     }
 
 };
+
+function changeCheckBox() {
+    const gold = document.querySelector('#planGold');
+    const silver = document.querySelector('#planSilver');
+
+    silver.addEventListener("click", () => {
+        if (silver.checked) {
+            gold.checked = false;
+        }
+    });
+
+    gold.addEventListener("click", () => {
+        if (gold.checked) {
+            silver.checked = false;
+        }
+    });
+}
