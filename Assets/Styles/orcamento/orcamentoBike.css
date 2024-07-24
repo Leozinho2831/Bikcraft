@@ -36,7 +36,8 @@
 }
 
 .budget__bike > h2::before,
-.budget__insurance > h2::before{
+.budget__insurance > h2::before,
+.budget__form > div > h2::before {
     content: '';
     display: inline-block;
     width: 4px;
