@@ -171,6 +171,7 @@
 }
 
 @media (max-width: 1400px) {
+
     .bike__container {
         flex-direction: column;
         align-items: center;
@@ -185,6 +186,11 @@
 
     .bike__details {
         width: 80%;
+    }
+
+    .products__details{
+        gap: 20px;
+        flex-wrap: wrap;
     }
 }
 
