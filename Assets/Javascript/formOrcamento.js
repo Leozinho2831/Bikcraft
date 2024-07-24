@@ -54,12 +54,10 @@ function enterPage() {
         bikeNimbus.checked = true;
         choiceItem();
     } else if(pagePlan === 'Gold'){
-        console.log('merda')
         checkedInsurance.checked = true;
         planGold.checked = true;
         choiceItem();
     } else if(pagePlan === 'Silver'){
-        console.log('eba')
         checkedInsurance.checked = true;
         planSilver.checked = true;
         choiceItem();
@@ -86,5 +84,5 @@ function changeCheckBox(){
             planGold.checked = false;
         }
     });
-    
+
 };
