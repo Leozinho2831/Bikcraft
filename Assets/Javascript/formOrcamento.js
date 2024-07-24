@@ -40,7 +40,7 @@ function enterPage() {
 
     const pagePlan = sessionStorage.getItem('pagePlan');
 
-    if (pageMagic) {
+    if (pageMagic){
         checkedBike.checked = true;
         bikeMagic.checked = true;
         choiceItem();  
@@ -54,12 +54,10 @@ function enterPage() {
         bikeNimbus.checked = true;
         choiceItem();
     } else if(pagePlan === 'Gold'){
-        console.log('merda')
         checkedInsurance.checked = true;
         planGold.checked = true;
         choiceItem();
     } else if(pagePlan === 'Silver'){
-        console.log('eba')
         checkedInsurance.checked = true;
         planSilver.checked = true;
         choiceItem();
@@ -72,3 +70,19 @@ function enterPage() {
 }
 
 enterPage();
+
+function changeCheckBox(){
+
+    planGold.addEventListener('click', () =>{
+        if(planGold.checked){
+            planSilver.checked = false;
+        }
+    });
+
+    planSilver.addEventListener('click', () =>{
+        if(planSilver.checked){
+            planGold.checked = false;
+        }
+    });
+
+};
