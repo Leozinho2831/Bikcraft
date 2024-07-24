@@ -53,6 +53,9 @@
             <form action="#" class="budget__choice">
 
                 <div>
+
+                    <!-- Escolha entre bikcraft e seguro -->
+
                     <h2>BIKCRAFT OU SEGURO?</h2>
 
                     <div class="choice__inputs">
@@ -65,9 +68,14 @@
                     </div>
 
                     <div class="budget__bike disableOption">
+
+                        <!-- Escolha sua bicicleta -->
+
                         <h2>ESCOLHA A SUA :</h2>
 
                          <div class="choice__items">
+
+                            <!-- Nimbus Stark -->
 
                             <input type="checkbox" name="Nimbus" id="Nimbus">
                             <label for="Nimbus">Nimbus Stark 
@@ -95,6 +103,8 @@
                                 </div>
                             </label>
 
+                            <!-- Nebula Cosmic -->
+
                             <input type="checkbox" name="Nebula" id="Nebula">
                             <label for="Nebula">Nebula Cosmic
                                 <p>R$ 3999</p>
@@ -120,6 +130,8 @@
                                     <img src="../Images/Images bikes/bicicleta3.png" alt="Nebula Cosmic">
                                 </div>
                             </label>
+
+                            <!-- Magic Might -->
 
                             <input type="checkbox" name="Magic" id="Magic">
                             <label for="Magic">Magic Might
@@ -151,9 +163,14 @@
                     </div>
 
                     <div class="budget__insurance disableOption">
+
+                        <!-- Escolha o seguro -->
+
                         <h2>ESCOLHA O SEU :</h2>
                         
                         <div class="choice__items">
+
+                            <!-- Plano gold -->
 
                             <input type="checkbox" name="planGold" id="planGold" onchange="changeCheckBox()">
                             <label for="planGold">
@@ -188,6 +205,8 @@
                                     </ul>
                                 </div>
                             </label>
+
+                            <!-- Plano silver -->
     
                             <input type="checkbox" name="planSilver" id="planSilver" onchange="changeCheckBox()">
                             <label for="planSilver">
@@ -230,9 +249,14 @@
                 
                 <div>
 
+                    <!-- Dados pessoais -->
+
                     <h2>DADOS PESSOAIS</h2>
 
                     <div>
+
+                        <!-- Nome e sobrenome -->
+
                         <div class="budget__form-container">
                             <div class="budget__form-items">
                                 <label for="nome">Nome</label>
@@ -244,10 +268,14 @@
                             </div>
                         </div>
 
+                        <!-- CPF -->
+
                         <div class="budget__form-items">
                             <label for="cpf">CPF</label>
                             <input type="text" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ name="cpf" placeholder="000.000.000-00">
                         </div>
+
+                        <!-- Email -->
 
                         <div class="budget__form-items">
                             <label for="email">Email</label>
@@ -255,9 +283,13 @@
                         </div>
                     </div>
 
+                    <!-- Localização da entrega -->
+
                     <h2>ENTREGA</h2>
 
                     <div>
+
+                        <!-- CEP e Número da casa -->
 
                         <div class="budget__form-container">
                             <div class="budget__form-items">
@@ -270,6 +302,8 @@
                             </div>
                         </div>
 
+                        <!-- Logradouro e Bairro -->
+
                         <div class="budget__form-container">
                             <div class="budget__form-items">
                                 <label for="logradouro">Logradouro</label>
@@ -280,6 +314,8 @@
                                 <input type="text" name="bairro">
                             </div>
                         </div>
+
+                        <!-- Cidade e Estado -->
 
                         <div class="budget__form-container">
                             <div class="budget__form-items">
@@ -322,6 +358,8 @@
                             </div>
                         </div>
 
+                        <!-- Termos e condições -->
+
                         <div class="budget__form-termos">
                             <input type="checkbox" name="termos">
                             <label for="termos">Li e aceito os <a href="termosCondição.html">termos e condições</a>.</label>
@@ -337,6 +375,8 @@
                     </div>
 
                 </div>
+
+                <!-- Detalhe no fundo -->
 
                 <figure>
                     <img src="../Images/Components/detalhe contato inferior.svg" alt="detalhe do background" class="budget__form-detail">

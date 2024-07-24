@@ -80,7 +80,13 @@
 .bike__about-container-texts {
     display: flex;
     align-items: center;
-    gap: calc(var(--space) - 10px);
+    gap: calc(var(--space) - 30px);
+
+    background-color: var(--black);
+
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
 }
 
 .bike__about-container-texts p {
