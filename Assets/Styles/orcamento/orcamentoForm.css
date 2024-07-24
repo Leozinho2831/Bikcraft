@@ -15,8 +15,111 @@
 /* estilo form da direita */
 
 .budget__form{
+    background-color: var(--white);
+
     width: 100%;
     max-width: 740px;
     min-height: 950px;
-    padding: var(--space);
+    padding: 60px var(--space);
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.budget__form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.budget__form > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.budget__form-container {
+    display: flex;
+    gap: 20px;
+}
+
+.budget__form-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+}
+
+.budget__form h2 {
+    font: 600 0.75rem  var(--secundary-font);
+
+    color: var(--grey7);
+}
+
+.budget__form label {
+    font: 500 1rem  var(--secundary-font);
+
+    color: var(--grey11);
+}
+
+.budget__form input,
+.budget__form select {
+    width: 100%;
+    height: 48px;
+    padding-left: 10px;
+    
+    background-color: var(--grey1);
+    border: 1px solid var(--grey2);
+    border-radius: 5px;
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    color: var(--grey11);
+}
+
+.budget__form input::placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+
+    color: var(--grey4);
+}
+
+#estado {
+    color: var(--grey4);
+}
+
+.budget__form select option {
+    color: var(--grey11);
+}
+
+.budget__form-termos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.budget__form-termos input {
+    width: 28px;
+    height: 28px;
+}
+
+.budget__form-termos label a {
+    color: var(--grey11);
+
+    text-decoration: underline;
+}
+
+#solicitar-orcamento {
+    padding-top: 20px;
+}
+
+.budget__form figure {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.budget__form-detail {
+    width: 52px;
 }
