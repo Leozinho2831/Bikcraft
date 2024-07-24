@@ -125,3 +125,19 @@
 .budget__form-detail {
     width: 52px;
 }
+
+.bike__about-container input[type = 'submit']{
+    background-image: linear-gradient(180deg, var(--yellow-light), var(--yellow-dark));
+    color: var(--brown);
+
+    width: fit-content;
+    height: fit-content;
+    padding: 16px 40px;
+    border-radius: 5px;
+
+    font-family: var(--secundary-font);
+    font-weight: 600;
+    font-size: 1.125rem;
+
+    cursor: pointer;
+}
