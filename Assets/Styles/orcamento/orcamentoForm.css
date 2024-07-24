@@ -26,6 +26,8 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 60px;
+
+    border-radius: 0 5px 5px 0;
 }
 
 .budget__form > div {
@@ -50,13 +52,18 @@
     flex-direction: column;
     gap: 0;
     width: 100%;
+
+    position: relative;
 }
 
-.budget__form h2 {
+.budget__form h2{
     font: 600 0.75rem  var(--secundary-font);
-    margin: 60px 0 0 0;
 
-    color: var(--grey7);
+    color: var(--grey7); 
+}
+
+.budget__form h2:last-of-type{
+    margin: 60px 0 0 0;
 }
 
 .budget__form label {
@@ -69,7 +76,7 @@
 .budget__form select {
     width: 100%;
     height: 48px;
-    padding-left: 10px;
+    padding: 12px;
     
     background-color: var(--grey1);
     border: 1px solid var(--grey2);
@@ -79,6 +86,20 @@
     font-weight: 400;
 
     color: var(--grey11);
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.budget__form-items img{
+    width: 16px;
+    height: 6px;
+
+    position: absolute;
+    top: 65%;
+    right: 5%;
+
+    transition: 0.1s ease-in-out;
 }
 
 .budget__form input::placeholder {
@@ -131,8 +152,8 @@
     color: var(--brown);
 
     width: fit-content;
-    height: fit-content;
-    padding: 16px 40px;
+    height: 100%;
+    padding: 16px 20px;
     border-radius: 5px;
 
     font-family: var(--secundary-font);
@@ -142,11 +163,30 @@
     cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (min-width:1000px) and (max-width: 1250px){
+
+    .budget__form-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1000px){
+
     .budget {
         flex-direction: column;
         justify-content: stretch;
         align-items: center;
+        
+    }
+
+    .budget__choice{
+        max-width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .budget__form{
+        max-width: 100%;
+        border-radius: 0 0 5px 5px;
     }
 
     .choice__items > label:has(p) {
@@ -154,42 +194,26 @@
     }
 }
 
-@media (max-width: 670px) {
-    .budget__choice {
-        width: 80vw;
-        max-width: 100%;
-    }
+@media (max-width: 780px){
 
-    .choice__items,
-    .choice__inputs {
-        margin: 0;
-    }
-
-    .budget__form {
-        width: 80vw;
-    }
-
-    .budget__form-container {
-        flex-direction: column;
+    .budget__form-container{
+        flex-wrap: wrap;
     }
 
     .bike__about-container input[type = 'submit']{
-        width: 100%;
-        height: 100%;
+        font-size: 1rem;
     }
+
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px){
+
     .budget {
-        padding: 0;
+        padding: 20px;
     }
 
-    .budget__choice {
-        width: 100vw;
-    }
-
-    .budget__form {
-        width: 100vw;
+    .budget__form{
+        padding: 20px;
     }
 
     .choice__items:has(label > div) {
