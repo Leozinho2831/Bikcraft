@@ -65,7 +65,7 @@
 
                             <!-- Botão comprar agora -->
 
-                            <a href="../orcamento.html">COMPRAR AGORA</a>
+                            <a href="../orcamento.html" onclick="setPageMagic()">COMPRAR AGORA</a>
 
                             <!-- Detalhes da entrega -->
 
@@ -270,5 +270,10 @@
     </footer>
     
     <script src="../../Javascript/menu.js"></script>
+    <script>
+        function setPageMagic(){
+            sessionStorage.setItem('pageMagic', 'buttonMagic');
+        };
+    </script>
 </body>
 </html>
