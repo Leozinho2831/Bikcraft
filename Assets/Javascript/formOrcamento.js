@@ -86,3 +86,17 @@ function changeCheckBox(){
     });
 
 };
+
+let amountClick = 0;
+
+function rotateImage(){
+    const image = document.querySelector('.budget__form-items img');
+
+    if(amountClick === 0){
+        image.style.cssText = 'transform: rotate(180deg);';
+        amountClick = 1;
+    } else {
+        image.style.cssText = 'transform: rotate(0);'
+        amountClick = 0;
+    }
+}
