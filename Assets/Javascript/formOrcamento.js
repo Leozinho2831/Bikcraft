@@ -40,7 +40,7 @@ function enterPage() {
 
     const pagePlan = sessionStorage.getItem('pagePlan');
 
-    if (pageMagic) {
+    if (pageMagic){
         checkedBike.checked = true;
         bikeMagic.checked = true;
         choiceItem();  
