@@ -199,7 +199,7 @@
                     <li>Suporte 08h às 18h</li>
                     <li>Cobertura estadual</li>
                 </ul>
-                <a href="Assets/Pages/orcamento.html">Inscreva-se</a>
+                <a href="Assets/Pages/orcamento.html" onclick = "pagePlan('Silver')">Inscreva-se</a>
             </div>
             <div class="safe__plan gold">
                 <div>
@@ -217,7 +217,7 @@
                     <li>Desconto em parceiros</li>
                     <li>Acesso ao Clube Bikecraft</li>
                 </ul>
-                <a href="Assets/Pages/orcamento.html">Inscreva-se</a>
+                <a href="Assets/Pages/orcamento.html" onclick = "pagePlan('Gold')">Inscreva-se</a>
             </div>
 
             <!-- decoration bottom safe -->
@@ -275,5 +275,10 @@
     </footer>
     
     <script src="Assets/Javascript/menu.js"></script>
+    <script>
+        function pagePlan(plan){
+            sessionStorage.setItem('pagePlan', plan)
+        };
+    </script>
 </body>
 </html>
