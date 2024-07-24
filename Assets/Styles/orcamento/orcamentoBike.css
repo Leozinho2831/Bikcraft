@@ -82,6 +82,11 @@
     display: none;
 }
 
+.choice__items img {
+    width: 141px;
+    height: 87px;
+}
+
 /* selecionando label irmão quando input estiver ativo */
 #Bikcraft:checked ~ label[for='Bikcraft'],
 #Seguro:checked ~ label[for='Seguro'],
